@@ -1,17 +1,144 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="false" class="ion-padding">
+  <br>
+<center><ion-title>Administrador de Gastos</ion-title></center>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <br>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h5>Balance actual</h5>
+          <h6 class="text-muted">Gastos totales</h6>
+        </ion-col>
+        <ion-col class="ion-text-right">
+          <h5>$5390.29</h5>
+          <h6 class="text-muted">$3813.47</h6>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <div class="container-fluid p-2 text-dark bg-light">
+      <center><h5>Balance de gastos</h5></center>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="my-auto">
+            Alimento
+          </ion-col>
+          <ion-col class="my-auto">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 25%; height: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <label style="float: right;" class="text-muted">$633.50</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="my-auto">
+            Salud
+          </ion-col>
+          <ion-col class="my-auto">
+            <div class="progress">
+              <div class="progress-bar bg-secondary" role="progressbar" style="width: 40%; height: 100%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <label style="float: right;" class="text-muted">$342.00</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="my-auto">
+            Transporte
+          </ion-col>
+          <ion-col class="my-auto">
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 10%; height: 100%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <label style="float: right;" class="text-muted">$620.10</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="my-auto">
+          Servicios
+          </ion-col>
+          <ion-col class="my-auto">
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%; height: 100%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <label style="float: right;" class="text-muted">$128.20</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="my-auto">
+            Ocio
+          </ion-col>
+          <ion-col class="my-auto">
+            <div class="progress">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 33%; height: 100%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <label style="float: right;" class="text-muted">$240.80</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="my-auto">
+            Otros
+          </ion-col>
+          <ion-col class="my-auto">
+            <div class="progress">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 28%; height: 100%;" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <label style="float: right;" class="text-muted">$129.41</label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <br>
+    </div>
+
+    <br>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button color="success" expand="block">Agregar gasto</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="secondary" expand="block">Agregar ingreso</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+      <!--<ion-item lines="full">
+        <ion-label position="floating">Concepto</ion-label>
+        <ion-input type="text" [(ngModel)]="product.concepto" required></ion-input>
+      </ion-item>
+  
+      <ion-item lines="full">
+        <ion-label position="floating">Monto</ion-label>
+        <ion-input type="text" [(ngModel)]="product.monto" required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Categoría</ion-label>
+        <ion-select placeholder="Seleccione una categoría" [(ngModel)]="product.categoria" required>
+          <ion-select-option value="Alimento">Alimento</ion-select-option>
+          <ion-select-option value="Salud">Salud</ion-select-option>
+          <ion-select-option value="Entretenimiento">Entretenimiento</ion-select-option>
+          <ion-select-option value="Servicios">Servicios</ion-select-option>
+          <ion-select-option value="Otro">Otro</ion-select-option>
+        </ion-select>
+      </ion-item>
+      
+      <br>
+      <ion-row>
+        <ion-col>
+          <ion-button color="success" expand="block" (click)="insert()" >Agregar gasto</ion-button>
+        </ion-col>
+      </ion-row>-->
+
 </ion-content>

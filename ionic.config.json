@@ -1,5 +1,7 @@
 {
   "name": "economyhealth",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
