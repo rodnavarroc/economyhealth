@@ -11,6 +11,24 @@ ion-toolbar
     --color: #DBF4AD;
 }
 
+.iconStyle
+{
+    --background:transparent;
+}
+
+.mainIcon
+{
+    padding-left: 80px;
+}
+
+.imageMain{
+    --background:transparent;
+    width:25%;
+    height:25%;
+    float:right;
+    right: 0px;
+}
+
 .btn_agregarIngreso
 {
     --background: #808782;
