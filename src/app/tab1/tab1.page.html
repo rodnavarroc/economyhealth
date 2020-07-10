@@ -1,22 +1,46 @@
-<ion-content [fullscreen]="false" class="ion-padding">
-  <br>
-<center><ion-title>Administrador de Gastos</ion-title></center>
+<!--MENU Y CABECERA-->
 
-    <br>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-text style="font-size: 16px;">&nbsp;Administrador de Gastos</ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false" class="ion-padding">
+
+<ion-menu side="start" content-id="menuContent">
+  <ion-header>
+    <ion-toolbar translucent>
+      <ion-title style="font-size: 16px; font-weight: lighter;">EconoMyHealth</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="menuContent">
+    <!--Aqui van los links del menu-->
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="menuContent"></ion-router-outlet>
+
+<!--MENU Y CABECERA-->
+
+<!--CUERPO DE LA PAGINA-->
+
     <ion-grid>
       <ion-row>
         <ion-col>
-          <h5>Balance actual</h5>
-          <h6 class="text-muted">Gastos totales</h6>
+          <h6 style="color: #233321;" style="font-size: 17px;">Balance actual</h6>
+          <h6 style="font-size: 15px;" class="text-success">Gastos totales</h6>
         </ion-col>
         <ion-col class="ion-text-right">
-          <h5>$5390.29</h5>
-          <h6 class="text-muted">$3813.47</h6>
+          <h4 style="color: #233321;">$5390.29</h4>
+          <h5 class="text-success">$3813.47</h5>
         </ion-col>
       </ion-row>
     </ion-grid>
 
-    <div class="container-fluid p-2 text-dark bg-light">
+    <div class="container-fluid p-2 text-dark" style="background-color: #cfe3d3;">
       <center><h5>Balance de gastos</h5></center>
       <ion-grid>
         <ion-row>
@@ -25,11 +49,11 @@
           </ion-col>
           <ion-col class="my-auto">
             <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 25%; height: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar bg-success alimento" role="progressbar" style="width: 25%; height: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </ion-col>
           <ion-col>
-            <label style="float: right;" class="text-muted">$633.50</label>
+            <label style="float: right;" class="text-dark">$633.50</label>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -38,11 +62,11 @@
           </ion-col>
           <ion-col class="my-auto">
             <div class="progress">
-              <div class="progress-bar bg-secondary" role="progressbar" style="width: 40%; height: 100%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar salud" role="progressbar" style="width: 40%; height: 100%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </ion-col>
           <ion-col>
-            <label style="float: right;" class="text-muted">$342.00</label>
+            <label style="float: right;" class="text-dark">$342.00</label>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -51,11 +75,11 @@
           </ion-col>
           <ion-col class="my-auto">
             <div class="progress">
-              <div class="progress-bar bg-info" role="progressbar" style="width: 10%; height: 100%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar transporte" role="progressbar" style="width: 10%; height: 100%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </ion-col>
           <ion-col>
-            <label style="float: right;" class="text-muted">$620.10</label>
+            <label style="float: right;" class="text-dark">$620.10</label>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -64,11 +88,11 @@
           </ion-col>
           <ion-col class="my-auto">
             <div class="progress">
-              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%; height: 100%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar servicios" role="progressbar" style="width: 60%; height: 100%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </ion-col>
           <ion-col>
-            <label style="float: right;" class="text-muted">$128.20</label>
+            <label style="float: right;" class="text-dark">$128.20</label>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -77,11 +101,11 @@
           </ion-col>
           <ion-col class="my-auto">
             <div class="progress">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 33%; height: 100%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar ocio" role="progressbar" style="width: 33%; height: 100%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </ion-col>
           <ion-col>
-            <label style="float: right;" class="text-muted">$240.80</label>
+            <label style="float: right;" class="text-dark">$240.80</label>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -90,11 +114,11 @@
           </ion-col>
           <ion-col class="my-auto">
             <div class="progress">
-              <div class="progress-bar bg-dark" role="progressbar" style="width: 28%; height: 100%;" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar otros" role="progressbar" style="width: 28%; height: 100%;" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </ion-col>
           <ion-col>
-            <label style="float: right;" class="text-muted">$129.41</label>
+            <label style="float: right;" class="text-dark">$129.41</label>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -105,10 +129,10 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button color="success" expand="block">Agregar gasto</ion-button>
+          <ion-button class="btn_agregarGasto" expand="block">Agregar gasto</ion-button>
         </ion-col>
         <ion-col>
-          <ion-button color="secondary" expand="block">Agregar ingreso</ion-button>
+          <ion-button class="btn_agregarIngreso" expand="block">Agregar ingreso</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -140,5 +164,7 @@
           <ion-button color="success" expand="block" (click)="insert()" >Agregar gasto</ion-button>
         </ion-col>
       </ion-row>-->
+
+<!--CUERPO DE LA PAGINA-->
 
 </ion-content>
