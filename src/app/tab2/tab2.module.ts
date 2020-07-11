@@ -8,6 +8,9 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 
+import { EcoMenuComponent } from '../Components/eco-menu/eco-menu.component';
+import { MainHeaderComponent } from '../Components/main-header/main-header.component'; 
+
 @NgModule({
   imports: [
     IonicModule,
@@ -16,6 +19,6 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
-  declarations: [Tab2Page]
+  declarations: [Tab2Page, EcoMenuComponent, MainHeaderComponent]
 })
 export class Tab2PageModule {}
