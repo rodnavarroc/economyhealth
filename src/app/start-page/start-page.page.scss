@@ -5,9 +5,6 @@ ion-content, ion-label {
     --background: #E1F1DF;
 }
 
-.text_motto{
-    --color: #656565;
-}
 
 .btn_start
 {
@@ -17,5 +14,9 @@ ion-content, ion-label {
     display: flex;
     justify-content: space-between;
     outline: black;
+}
+
+a {
+    text-decoration: none;
 }
 
