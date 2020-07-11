@@ -1,32 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
-@Component({
-  selector: 'slides-example',
-  template: `
-    <ion-content>
-      <ion-slides pager="true" [options]="slideOpts">
-        <ion-slide>
-          <h1>Slide 1</h1>
-        </ion-slide>
-        <ion-slide>
-          <h1>Slide 2</h1>
-        </ion-slide>
-        <ion-slide>
-          <h1>Slide 3</h1>
-        </ion-slide>
-      </ion-slides>
-    </ion-content>
-  `
-})
-export class SlideExample {
-  // Optional parameters to pass to the swiper instance.
-  // See http://idangero.us/swiper/api/ for valid options.
-  slideOpts = {
-    initialSlide: 1,
-    speed: 400
-  };
-  constructor() {}
-}
+let CheckCB = 0;
 
 @Component({
   selector: 'app-slidesinicio',
@@ -37,9 +13,38 @@ export class SlidesinicioPage implements OnInit {
   public form = [
     { val: 'Acuerdo', isChecked: false }
   ];
-  constructor() { }
+
+  constructor(public router : Router, public alertController: AlertController) { }
 
   ngOnInit() {
+  }
+
+  revisarCheckbox()
+  {
+    if(CheckCB == 0)
+    {
+      CheckCB = 1;
+    }
+  }
+
+  btnCrearCuenta()
+  {
+    if(CheckCB == 1)
+    {
+      this.router.navigate(['/crear-cuenta']);
+    }
+    else{
+      this.errorAlert();
+    }
+  }
+
+  async errorAlert() {
+    const alert = await this.alertController.create({
+      header: '¡Hey!',
+      message: 'Debes aceptar los términos y condiciones para registrarte.',
+      buttons: ['OK']
+    });
+    await alert.present();
   }
 
 }
