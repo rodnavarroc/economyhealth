@@ -1,0 +1,21 @@
+ion-content, ion-label {
+    font-family: Inter;
+    font-weight: normal;
+    color: #656565;
+    --background: #E1F1DF;
+}
+
+.text_motto{
+    --color: #656565;
+}
+
+.btn_start
+{
+    --background: #a6d3a0;
+    --color: #656565;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    outline: black;
+}
+
