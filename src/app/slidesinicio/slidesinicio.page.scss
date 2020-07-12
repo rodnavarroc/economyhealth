@@ -8,6 +8,8 @@ ion-content, ion-label {
 ion-slides
 {
     height: 100%;
+    --bullet-background: #BDE375;
+    --bullet-background-active: #61A445;
 }
 
 .swiper-slide {
@@ -15,9 +17,7 @@ ion-slides
     display: block;    
 }
 
-.swiper-pagination-bullet-active {
-    background: #1e7e34 !important;
-}
+
 
 a {
     text-decoration: none;
