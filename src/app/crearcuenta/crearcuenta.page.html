@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Crear Cuenta</ion-title>
+    <ion-title style="background-color: #233321;;">Crear Cuenta</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<a routerLink="/tabs"><ion-button color="medium">CREAR CUENTA</ion-button></a>   
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-item>
+    <ion-label position="stacked">Correo electrónico: *</ion-label>
+    <ion-input required="true"></ion-input>
+  </ion-item>
+  <br>
+<ion-item>
+  <ion-label position="stacked">Contraseña: *</ion-label>
+  <ion-input required="true" type="password"></ion-input>
+</ion-item>
+<p>*Es obligatorio llenar ambos campos</p>
+<br>
+
+<center><a routerLink="/tabs" style="margin-left: auto;"><ion-button color="medium">CREAR CUENTA</ion-button></a></center> 
 </ion-content>
