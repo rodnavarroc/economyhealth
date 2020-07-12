@@ -15,6 +15,9 @@ ion-slides
     display: block;    
 }
 
+.swiper-pagination-bullet-active {
+    background: #1e7e34 !important;
+}
 
 a {
     text-decoration: none;
