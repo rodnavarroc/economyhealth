@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CrearcuentaPageRoutingModule } from './crearcuenta-routing.module';
-
+import { MainHeaderComponent } from '../Components/main-header/main-header.component'; 
 import { CrearcuentaPage } from './crearcuenta.page';
 
 @NgModule({
@@ -15,6 +15,6 @@ import { CrearcuentaPage } from './crearcuenta.page';
     IonicModule,
     CrearcuentaPageRoutingModule
   ],
-  declarations: [CrearcuentaPage]
+  declarations: [CrearcuentaPage, MainHeaderComponent]
 })
 export class CrearcuentaPageModule {}
