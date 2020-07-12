@@ -2,51 +2,10 @@ ion-content, ion-label {
     font-family: Inter;
     font-weight: normal;
     color: #656565;
-    --background: #E1F1DF;
+    --background: #f7f7f5;
 }
 
-ion-tittle {
-    text-align: center;
-    font-family: Inter;
-    font-weight: normal;
-    color: #656565;
-    --background: #233321;
-}
 a {
     text-decoration: none;
-}
-
-ion-label {
-    --background: #cfe3d3;
-    font-family: Inter;
-    text-decoration: none;
-    color: #656565;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-ion-input {
-    --background: #cfe3d3;
-    font-family: Inter;
-    color: #656565;
-    text-decoration: none;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-ion-item {
-    --background: #cfe3d3;
-    font-family: Inter;
-    color: black;
-    text-decoration: none;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-p{
-    font-size: 80%;
-    font-family: Inter;
-    color: #656565;
-    padding-left: 5%;
 }
 

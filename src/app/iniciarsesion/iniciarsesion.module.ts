@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MainHeaderComponent } from '../Components/main-header/main-header.component'; 
 
 import { IonicModule } from '@ionic/angular';
 
@@ -15,6 +16,6 @@ import { IniciarsesionPage } from './iniciarsesion.page';
     IonicModule,
     IniciarsesionPageRoutingModule
   ],
-  declarations: [IniciarsesionPage]
+  declarations: [IniciarsesionPage, MainHeaderComponent]
 })
 export class IniciarsesionPageModule {}

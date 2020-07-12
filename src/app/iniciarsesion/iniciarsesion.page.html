@@ -1,9 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Iniciar Sesión</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-main-header>
+
+</app-main-header>
 
 <ion-content>
-<a routerLink="/tabs"><ion-button color="medium">INICIAR SESIÓN</ion-button></a>
+  <br>
+  <br>
+  <center><h4>Inicio de sesión</h4></center>
+    <div class="form-group" style="padding: 15px 25px;">
+      <label>Nombre de usuario <small>*</small></label>
+      <ion-input type="text" class="form-control" required="true" style="background-color: #cee3d2;"></ion-input>
+      <br>
+      <label>Correo electrónico <small>*</small></label>
+      <ion-input type="email" class="form-control" required="true" style="background-color: #cee3d2;"></ion-input>
+      <br>
+      <label>Contraseña <small>*</small></label>
+      <ion-input type="password" class="form-control" required="true" style="background-color: #cee3d2;"></ion-input>
+    </div>
+<center><p class="text-muted">*Es obligatorio llenar todos los campos.</p></center>
+
+<center><a routerLink="/tabs" style="margin-left: auto;"><ion-button color="medium">INICIAR SESIÓN</ion-button></a></center> 
 </ion-content>
