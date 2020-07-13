@@ -7,6 +7,9 @@ import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
 
+import { EcoMenuComponent } from '../Components/eco-menu/eco-menu.component';
+import { MainHeaderComponent } from '../Components/main-header/main-header.component'; 
+
 @NgModule({
   imports: [
     IonicModule,
@@ -14,6 +17,6 @@ import { TabsPage } from './tabs.page';
     FormsModule,
     TabsPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [TabsPage, EcoMenuComponent, MainHeaderComponent]
 })
 export class TabsPageModule {}
