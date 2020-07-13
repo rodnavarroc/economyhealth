@@ -1,6 +1,12 @@
-<app-main-header>
-
-</app-main-header>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-text>&nbsp;Favoritos</ion-text>
+    <ion-tab-button class="mainIcon" slot="end" tab="tab1"><ion-icon name="home-outline"></ion-icon></ion-tab-button>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content [fullscreen]="false" class="ion-padding">
   <app-eco-menu>

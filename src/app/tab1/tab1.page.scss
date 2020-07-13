@@ -51,3 +51,19 @@ ion-content, ion-label {
 a {
     text-decoration: none;
 }
+
+ion-toolbar
+{
+    --background: #587854;
+    --color: #DBF4AD;
+}
+
+.iconStyle
+{
+    --background:transparent;
+}
+
+.mainIcon
+{
+    padding-left: 80px;
+}
