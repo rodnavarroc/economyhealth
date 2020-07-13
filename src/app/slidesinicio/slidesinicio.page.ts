@@ -24,6 +24,12 @@ export class SlidesinicioPage implements OnInit {
     if(CheckCB == 0)
     {
       CheckCB = 1;
+      return;
+    }
+    if(CheckCB == 1)
+    {
+      CheckCB = 0;
+      return;
     }
   }
 
