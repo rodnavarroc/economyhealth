@@ -3,10 +3,7 @@ ion-content, ion-label {
     font-weight: normal;
     color: #656565;
     //--background: #f7f7f5;
-    --background: url('https://i.imgur.com/EtotCSj.png');
-    --background-position: center;
-    --background-repeat: no-repeat;
-    --background-size: contain;
+    --background: url('https://i.imgur.com/gKl1VI9.png') no-repeat center/cover fixed;
 }
 
 .btn_agregarIngreso

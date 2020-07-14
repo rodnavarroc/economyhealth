@@ -12,7 +12,7 @@
 <ion-content [fullscreen]="false" class="ion-padding">
 
   <!--CUERPO DE LA PAGINA-->
-  <ion-card>
+  <!--<ion-card>
     <ion-card-header>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
       <ion-card-title>Card Title</ion-card-title>
@@ -57,34 +57,37 @@
       <ion-icon name="walk" slot="start"></ion-icon>
       <ion-label>Card Button Item 2</ion-label>
     </ion-item>
-  </ion-card>
+  </ion-card>-->
   
   <ion-card>
     <ion-img src="https://digitalsevilla.com/wp-content/uploads/2018/02/Captura-de-pantalla-2018-02-13-a-las-23.21.44.png"></ion-img>
     <ion-card-header>
-    <ion-card-subtitle><i>#Finanzas</i></ion-card-subtitle>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Finanzas</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
     <ion-card-title>25 ideas para llegar a fin de mes siendo estudiante.</ion-card-title>
   </ion-card-header>
-    <ion-card-content>
-      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
     </ion-card-content>
     <ion-grid>
       <ion-row>
-        <ion-col><a href="https://www.sitly.es/blog/como-ganar-dinero-extra-siendo-estudiante/"><ion-button class="btn_ligas" color="medium" shape="round">Ir a la nota</ion-button></a></ion-col>
-        <ion-col size="4"></ion-col>
-        <ion-col>
-          <ion-buttons collapse="true">
-          <ion-button (click)="toggleZipped()" (click)="clickedStar()">
-          <ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-      </ion-col>
-        <ion-col>
-          <ion-buttons collapse="true">
-            <ion-button>
-              <ion-icon slot="icon-only" name="send"></ion-icon>
+        <ion-col size="6">
+          <a href="https://www.sitly.es/blog/como-ganar-dinero-extra-siendo-estudiante/" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
             </ion-button>
-          </ion-buttons>
+          </center>
         </ion-col>
       </ion-row>
     </ion-grid>
