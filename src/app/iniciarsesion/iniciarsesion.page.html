@@ -12,12 +12,12 @@
   <br>
     <div class="form-group" style="padding: 15px 25px;">
       <label>Nombre de usuario <small>*</small></label>
-      <ion-input type="text" class="form-control" required="true" style="background-color: #cee3d2;"></ion-input>
+      <ion-input type="text" class="form-control" required="true" style="background-color: #cee3d2;" [(ngModel)]="session.nombreUsuario"></ion-input>
       <br>
       <label>Contraseña <small>*</small></label>
-      <ion-input type="password" class="form-control" required="true" style="background-color: #cee3d2;"></ion-input>
+      <ion-input type="password" class="form-control" required="true" style="background-color: #cee3d2;" [(ngModel)]="session.clave"></ion-input>
     </div>
 <center><p class="text-muted">*Es obligatorio llenar todos los campos.</p></center>
 
-<center><a routerLink="/tabs" style="margin-left: auto;"><ion-button color="medium">INICIAR SESIÓN</ion-button></a></center> 
+<center><a style="margin-left: auto;"><ion-button color="medium" (click)="iniciarSesion()">INICIAR SESIÓN</ion-button></a></center> 
 </ion-content>
