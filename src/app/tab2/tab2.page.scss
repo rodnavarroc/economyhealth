@@ -17,3 +17,25 @@ ion-toolbar
 a {
     text-decoration: none;
 }
+
+ion-card, ion-item {
+    font-family: Inter;
+    font-weight: normal;
+    color: #656565;
+    --background: #E1F1DF;
+    padding-bottom: 5%;
+}
+
+ion-content, ion-label {
+    font-family: Inter;
+    font-weight: normal;
+    color: #656565;
+    --background: #f7f7f5;
+}
+
+.btn_ligas
+{
+    justify-content: space-between;
+    outline: black;
+    padding-left: 5%;
+}
