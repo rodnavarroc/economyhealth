@@ -1,0 +1,35 @@
+ion-toolbar
+{
+    --background: #587854;
+    --color: #DBF4AD;
+}
+
+.iconStyle
+{
+    --background:transparent;
+}
+
+.mainIcon
+{
+    padding-left: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ion-content, ion-label {
+    font-family: Inter;
+    font-weight: normal;
+    color: #656565;
+    --background: #f7f7f5;
+}
+
+ion-item{
+    --background: #cee3d2;
+}
+
+.textoTitulo{
+    margin-left: 60px;
+    font-size: 16px;
+}

@@ -21,7 +21,12 @@ const routes: Routes = [
   {
     path: 'slides-inicio',
     loadChildren: () => import('./slidesinicio/slidesinicio.module').then( m => m.SlidesinicioPageModule)
+  },  {
+    path: 'gastos',
+    loadChildren: () => import('./gastos/gastos.module').then( m => m.GastosPageModule)
   }
+
+
 
 
 ];

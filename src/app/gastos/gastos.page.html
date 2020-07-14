@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-text>&nbsp;Agregar Gastos</ion-text>
+    <ion-tab-button class="mainIcon" slot="end" routerLink="/tabs/tab1"><ion-icon name="home-outline"></ion-icon></ion-tab-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false" class="ion-padding">
+  <ion-list style="background:transparent;">
+    <ion-list-header>
+      <center><p class="textoTitulo">Ingresar un nuevo gasto</p></center>
+      <br>
+      <br>
+      <br>
+    </ion-list-header>
+    <ion-label> Tipo de gasto </ion-label>
+    <br>
+      <ion-item>
+        <ion-select placeholder="Seleccione una opción" [(ngModel)]="tipoGasto">
+          <ion-select-option value="alimentos">Alimento</ion-select-option>
+          <ion-select-option value="salud">Salud</ion-select-option>
+          <ion-select-option value="transporte">Transporte</ion-select-option>
+          <ion-select-option value="servicios">Servicios</ion-select-option>
+          <ion-select-option value="ocio">Ocio</ion-select-option>
+          <ion-select-option value="otros">Otros</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+    <ion-label>Nombre del producto o servicio</ion-label>
+    <br>
+      <ion-item>
+        <ion-input placeholder="Ingrese el texto" [(ngModel)]="nombreGasto"></ion-input>
+      </ion-item>
+      <br>
+
+    <ion-label>Costo</ion-label>
+    <br>
+      <ion-item>
+        <ion-input placeholder="$" [(ngModel)]="costoGasto"></ion-input>
+      </ion-item>
+  </ion-list>
+<br>
+<br>
+<br>
+
+<center><ion-button (click)="funcionImprimir()" color="medium">ENVIAR</ion-button></center>
+</ion-content>
