@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient} from '@angular/common/http';
+import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crearcuenta',
@@ -6,10 +9,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crearcuenta.page.scss'],
 })
 export class CrearcuentaPage implements OnInit {
-
-  constructor() { }
+  
+  session:any = {};
+  constructor(public http:HttpClient, public alertController: AlertController, public router : Router) { }
 
   ngOnInit() {
   }
+
+  crearCuenta(){
+    this.session.action = "insert"; 
+    this.http.post("http://localhost/economyhealth/registro.php", this.session).subscribe(data=>{
+    console.log(data); 
+    let result = JSON.stringify(data["_body"]);
+    if(data['status'] == "success")
+    {
+      this.successAlert();
+      this.router.navigate(['/start-page']);
+    }
+    }, err=>{
+    console.log(err); 
+    })
+    }
+
+  async successAlert() {
+      const alert = await this.alertController.create({
+        header: '¡Listo!',
+        message: 'Tu cuenta ha sido creada exitosamente.',
+        buttons: ['OK']
+      });
+      await alert.present();
+    }
 
 }
