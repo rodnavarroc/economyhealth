@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
-
+  constructor() {
+    
+  }
+  zipped: boolean = true;
+  toggleZipped(): void {
+  this.zipped = !this.zipped;
+  
 }
+}
+

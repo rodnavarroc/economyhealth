@@ -68,17 +68,28 @@
     <ion-card-content>
       Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
     </ion-card-content>
-    <a href="https://www.sitly.es/blog/como-ganar-dinero-extra-siendo-estudiante/"><ion-button class="btn_ligas" color="medium" shape="round">Ir a</ion-button></a>
-    <ion-button>
-    <ion-icon style="position: fixed" slot="icon-only" name="star"></ion-icon>
-    </ion-button>
-    <!--<ion-button>
-      <ion-icon slot="icon-only" name="share"></ion-icon>
-    </ion-button>-->
+    <ion-grid>
+      <ion-row>
+        <ion-col><a href="https://www.sitly.es/blog/como-ganar-dinero-extra-siendo-estudiante/"><ion-button class="btn_ligas" color="medium" shape="round">Ir a la nota</ion-button></a></ion-col>
+        <ion-col size="4"></ion-col>
+        <ion-col>
+          <ion-buttons collapse="true">
+          <ion-button (click)="toggleZipped()" (click)="clickedStar()">
+          <ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      </ion-col>
+        <ion-col>
+          <ion-buttons collapse="true">
+            <ion-button>
+              <ion-icon slot="icon-only" name="send"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card>
 
-
-  
   <!--CUERPO DE LA PAGINA-->
   
   </ion-content>

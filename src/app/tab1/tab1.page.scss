@@ -2,11 +2,11 @@ ion-content, ion-label {
     font-family: Inter;
     font-weight: normal;
     color: #656565;
-    --background: url(https://i.imgur.com/EtotCSj.png);
-    --background-position: center center;
+    //--background: #f7f7f5;
+    --background: url('https://i.imgur.com/EtotCSj.png');
+    --background-position: center;
     --background-repeat: no-repeat;
-    --background-attachment: fixed;
-    --background-size: cover;
+    --background-size: contain;
 }
 
 .btn_agregarIngreso
