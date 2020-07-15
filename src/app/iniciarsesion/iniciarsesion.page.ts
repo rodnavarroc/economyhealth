@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import {Globals} from '../globals';
 
 @Component({
   selector: 'app-iniciarsesion',
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 export class IniciarsesionPage implements OnInit {
   
   session:any = {};
-  constructor(public http:HttpClient, public alertController: AlertController, public router : Router) { }
+  constructor(public http:HttpClient, public alertController: AlertController, public router : Router, public globals: Globals) { this.globals = globals; }
 
   ngOnInit() {
   }
@@ -25,6 +26,8 @@ export class IniciarsesionPage implements OnInit {
     {
       this.successAlert();
       this.router.navigate(['/tabs']);
+      this.globals.username = data['username'];
+      console.log(this.globals.username);
     }
     else
     {
