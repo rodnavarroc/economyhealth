@@ -59,8 +59,135 @@
     </ion-item>
   </ion-card>-->
   
+
+  
+
+<!-- CARD DE ITEMS
   <ion-card>
-    <ion-img src="https://digitalsevilla.com/wp-content/uploads/2018/02/Captura-de-pantalla-2018-02-13-a-las-23.21.44.png"></ion-img>
+    <ion-card-header>
+      <ion-row>
+        <ion-col>
+          <ion-card-subtitle><i>#Descuento Estudiantil</i></ion-card-subtitle>
+        </ion-col>
+        <ion-col>
+          <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+        </ion-col>
+      </ion-row>
+      <ion-card-title>Descuentos y beneficios con la credencial estudiantil.</ion-card-title>
+    </ion-card-header>
+    <ion-item>
+      <ion-row>
+        <ion-col><ion-img class="img_descuentos" src="https://www.paredro.com/wp-content/uploads/2015/08/cinepolis-cinemex.jpg"></ion-img></ion-col>
+        <ion-col><p>Reciba un precio especial al mostrar en taquilla su credencial de estudiante.</p></ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col><ion-img class="img_descuentos" src="https://mextudia.com/wp-content/uploads/2019/09/office02.jpg"></ion-img></ion-col>
+        <ion-col><p>Versión gratuita para estudiantes, sólo es necesario estar inscrito a una institución educativa y tener un correo estudiantil.</p></ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-card>-->
+
+
+   <!--CARD 1-->
+  <ion-card>
+    <ion-img src="https://www.paredro.com/wp-content/uploads/2015/08/cinepolis-cinemex.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Descuento estudiantil</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Cinemex y Cinépolis.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Reciba un precio especial al comprar su boleto en taquilla y usar su credencial de estudiante, el descuento se aplica a un solo boleto por credencial.
+    </ion-card-content>
+  </ion-card>
+
+
+   <!--CARD 2-->
+  <ion-card>
+    <ion-img  src="https://mextudia.com/wp-content/uploads/2019/09/office02.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Descuento estudiantil</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Office 365 Educación.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Versión gratuita para estudiantes, sólo es necesario estar inscrito a una institución educativa y tener un correo estudiantil.
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <!--CARD 3-->
+  <ion-card>
+    <ion-img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=auto,q=80,fit=contain/content/2016/01/egg-wrap-recetas-r%C3%A1pidas-medium.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Alimentación</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>20 recetas para preparar para los que viven solos.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://culturacolectiva.com/comida/20-recetas-rapidas-y-faciles-de-preparar-para-los-que-viven-solos" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 4-->
+  <ion-card>
+    <ion-img  src="https://lh3.googleusercontent.com/proxy/6PPVNXyZ_V1pQS2p5g9cI9qdX4COsntdDKVbS-fVKck2VfqQSHlaS94fXBZw-EJFF5KrYMhAhhg_81OiXypneooCFU6Z2I9JhLviOo0OmTY4W_IvooZlC8n7t76Z0491LJSPIrDoMwtg3XA"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Descuento estudiantil</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Spotify.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Spotify otorga un precio especial en la suscripción premium a estudiantes mayores de 18 años y que estén inscritos en alguna institución de educación superior acreditadas. 
+    </ion-card-content>
+  </ion-card>
+
+  <!--CARD 5-->
+  <ion-card>
+    <ion-img src="https://www.zaplo.es/blog/wp-content/uploads/2019/01/controlar-tus-gastos.jpeg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -92,6 +219,132 @@
       </ion-row>
     </ion-grid>
   </ion-card>
+
+  <!--CARD 6-->
+  <ion-card>
+    <ion-img  src="https://brandemia.org/sites/default/files/logo_principal_autodesk.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Descuento estudiantil</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Autodesk.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Ofrece gratis a los estudiantes varios de sus productos hasta por un año, entre ellos Autocad, Maya, Revit, Inventor y muchos más. 
+    </ion-card-content>
+  </ion-card>
+
+  <!--CARD 7-->
+  <ion-card>
+    <ion-img src="https://cocinaconoberon.files.wordpress.com/2015/09/shutterstock_249406468.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Finanzas</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>20 trucos para ahorrar en la cocina.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.clara.es/hogar/trucos-para-ahorrar-cocina_183" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 8-->
+  <ion-card>
+    <ion-img src="https://cocinaconoberon.files.wordpress.com/2015/09/shutterstock_249406468.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Alimentación</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>20 trucos para ahorrar en la cocina.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.clara.es/hogar/trucos-para-ahorrar-cocina_183" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 9-->
+  <ion-card>
+    <ion-img src="https://querido-dinero.imgix.net/255/Portada-30-copy.png?w=1200&h=628&fit=crop&crop=faces&auto=format,compress&lossless=1"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Finanzas</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Trucos para que el super rinda todo el mes.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.vix.com/es/imj/hogar/6967/trucos-para-que-las-compras-del-super-rindan-todo-el-mes" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  
+
 
   <!--CUERPO DE LA PAGINA-->
   

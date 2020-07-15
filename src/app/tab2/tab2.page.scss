@@ -26,6 +26,12 @@ ion-card, ion-item {
     padding-bottom: 5%;
 }
 
+ion-card {
+    border-top: 6px solid #656565
+ }
+
+
+
 ion-content, ion-label {
     font-family: Inter;
     font-weight: normal;
@@ -52,4 +58,10 @@ ion-content, ion-label {
     display: flex;
     justify-content: space-between;
     outline: black;
+}
+
+.img_descuentos {
+    //border-radius: 10px !important;
+    //border: solid;
+    overflow: hidden;
 }
