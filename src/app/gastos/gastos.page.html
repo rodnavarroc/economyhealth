@@ -22,7 +22,7 @@
         <ion-select placeholder="Seleccione una opción" [(ngModel)]="gasto.categoria">
           <ion-select-option value="alimentos">Alimento</ion-select-option>
           <ion-select-option value="salud">Salud</ion-select-option>
-          <ion-select-option value="transporte">Transporte</ion-select-option>
+          <!--<ion-select-option value="transporte">Transporte</ion-select-option>-->
           <ion-select-option value="servicios">Servicios</ion-select-option>
           <ion-select-option value="ocio">Ocio</ion-select-option>
           <ion-select-option value="otros">Otros</ion-select-option>
@@ -46,6 +46,5 @@
 <br>
 <br>
 
-<center><ion-button (click)="insertDatosGasto()" color="medium">ENVIAR</ion-button></center>
-<ion-button (click)="info()" color="medium">sadhf</ion-button>
+<center><ion-button (click)="insertDatosGasto()" color="medium">ENVIAR {{numero}}</ion-button></center>
 </ion-content>

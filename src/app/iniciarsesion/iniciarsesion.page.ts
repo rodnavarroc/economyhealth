@@ -25,7 +25,7 @@ export class IniciarsesionPage implements OnInit {
     let result = JSON.stringify(data["_body"]);
     if(data['status'] == "success")
     {
-      this.successAlert();
+      //this.successAlert();
       this.router.navigate(['/tabs']);
       this.globals.username = data['username'];
       console.log(this.globals.username);

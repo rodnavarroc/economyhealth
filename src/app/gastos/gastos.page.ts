@@ -15,7 +15,6 @@ export class GastosPage implements OnInit {
 
   gasto:any= {};
   
-  
   constructor(public http:HttpClient, public alertController: AlertController, public router : Router, public globals: Globals) { this.globals = globals;}
 
   ngOnInit() {
@@ -45,11 +44,4 @@ export class GastosPage implements OnInit {
     });
     await alert.present();
   }
-
-  info(){
-    console.log(this.gasto.categoria);
-    console.log(this.gasto.concepto);
-    console.log(this.gasto.monto);
-  }
-
 }
