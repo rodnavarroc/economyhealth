@@ -40,7 +40,7 @@ export class Tab1Page {
   obtenerDatos(){
     this.datos.action = "insert"; 
     this.datos.idusuario = this.globals.username;
-    this.http.post("http://localhost/economyhealth/obtener_gastos.php", this.datos).subscribe(data=>{
+    this.http.post("http://45.15.24.33/economyhealth_server/obtener_gastos.php", this.datos).subscribe(data=>{
     console.log(data); 
     let result = JSON.stringify(data["_body"]);
 

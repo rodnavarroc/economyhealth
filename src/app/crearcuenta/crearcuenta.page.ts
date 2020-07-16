@@ -18,7 +18,7 @@ export class CrearcuentaPage implements OnInit {
 
   crearCuenta(){
     this.session.action = "insert"; 
-    this.http.post("http://localhost/economyhealth/registro.php", this.session).subscribe(data=>{
+    this.http.post("http://45.15.24.33/economyhealth_server/registro.php", this.session).subscribe(data=>{
     console.log(data); 
     let result = JSON.stringify(data["_body"]);
     if(data['status'] == "success")

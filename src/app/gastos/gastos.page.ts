@@ -23,7 +23,7 @@ export class GastosPage implements OnInit {
   insertDatosGasto(){
     this.gasto.action = "insert"; 
     this.gasto.idusuario = this.globals.username;
-    this.http.post("http://localhost/economyhealth/historial_gasto.php", this.gasto).subscribe(data=>{ 
+    this.http.post("http://45.15.24.33/economyhealth_server/historial_gasto.php", this.gasto).subscribe(data=>{ 
     console.log(data);
     let result = JSON.stringify(data["_body"]);
     if(data['status'] == "success")

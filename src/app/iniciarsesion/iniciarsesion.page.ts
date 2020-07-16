@@ -20,7 +20,7 @@ export class IniciarsesionPage implements OnInit {
 
   iniciarSesion(){
     this.session.action = "insert"; 
-    this.http.post("http://localhost/economyhealth/login.php", this.session).subscribe(data=>{
+    this.http.post("http://45.15.24.33/economyhealth_server/login.php", this.session).subscribe(data=>{
     console.log(data); 
     let result = JSON.stringify(data["_body"]);
     if(data['status'] == "success")
