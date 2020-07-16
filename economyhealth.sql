@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-07-2020 a las 08:14:36
+-- Tiempo de generación: 16-07-2020 a las 18:02:17
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.7
 
@@ -48,8 +48,16 @@ CREATE TABLE `gastos` (
   `servicios` int(200) DEFAULT NULL,
   `ocio` int(200) DEFAULT NULL,
   `otros` int(200) DEFAULT NULL,
-  `balance_general` int(200) DEFAULT NULL
+  `balance_general` int(200) DEFAULT NULL,
+  `gastos_totales` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='	';
+
+--
+-- Volcado de datos para la tabla `gastos`
+--
+
+INSERT INTO `gastos` (`idgasto`, `idusuario`, `alimento`, `salud`, `servicios`, `ocio`, `otros`, `balance_general`, `gastos_totales`) VALUES
+(5, '17', 185, 500, 0, 85, 0, 2515, '770');
 
 -- --------------------------------------------------------
 
@@ -79,6 +87,15 @@ CREATE TABLE `historial_gastos` (
   `categoria` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `historial_gastos`
+--
+
+INSERT INTO `historial_gastos` (`idregistro`, `idusuario`, `monto`, `concepto`, `categoria`) VALUES
+(8, '17', 500, 'Consulta', 'salud'),
+(9, '17', 85, 'Comida en la facultad', 'alimentos'),
+(12, '17', 85, 'Cine', 'ocio');
+
 -- --------------------------------------------------------
 
 --
@@ -97,7 +114,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`idusuario`, `nombre_usuario`, `clave`, `correo_electronico`) VALUES
-(7, 'rodnavarroc', '1234', 'rodolfo@mail.com');
+(17, 'rodolfo', '123', 'rodolfo@mail.com');
 
 --
 -- Índices para tablas volcadas
@@ -147,7 +164,7 @@ ALTER TABLE `favoritos`
 -- AUTO_INCREMENT de la tabla `gastos`
 --
 ALTER TABLE `gastos`
-  MODIFY `idgasto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idgasto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `guias`
@@ -159,13 +176,13 @@ ALTER TABLE `guias`
 -- AUTO_INCREMENT de la tabla `historial_gastos`
 --
 ALTER TABLE `historial_gastos`
-  MODIFY `idregistro` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idregistro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
