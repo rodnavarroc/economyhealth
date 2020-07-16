@@ -23,10 +23,9 @@ export class GastosPage implements OnInit {
 
   insertDatosGasto(){
     this.gasto.action = "insert"; 
-    this.http.post("http://localhost/economyhealth/historial_gasto.php", this.gasto).subscribe(data=>{
-    console.log(data); 
-    data['idusuario'] = this.globals.username;
-    console.log(data['idusuario']);
+    this.gasto.idusuario = this.globals.username;
+    this.http.post("http://localhost/economyhealth/historial_gasto.php", this.gasto).subscribe(data=>{ 
+    console.log(data);
     let result = JSON.stringify(data["_body"]);
     if(data['status'] == "success")
     {
@@ -40,8 +39,8 @@ export class GastosPage implements OnInit {
 
   async successAlert() {
     const alert = await this.alertController.create({
-      header: '¡Correcto!',
-      message: 'Información enviada correctamente.',
+      header: '¡Listo!',
+      message: 'Gasto registrado correctamente.',
       buttons: ['OK']
     });
     await alert.present();
