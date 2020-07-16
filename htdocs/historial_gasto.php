@@ -13,7 +13,39 @@ if($data['action'] == "insert"){
     $idusuario = $data['idusuario'];
     $q = mysqli_query($con, "INSERT INTO `historial_gastos` (`idusuario`, `categoria` , `concepto` , `monto`) VALUES ('$idusuario', '$categoria', '$concepto', '$monto')"); 
     if($q){
-    $message['status'] = "success"; 
+        
+        $message['status'] = "success";
+
+        if($categoria == "alimentos")
+        {
+            mysqli_query($con, "UPDATE gastos SET alimento = '$monto' WHERE idusuario = '$idusuario'");
+        }
+        if($categoria == "salud")
+        {
+            mysqli_query($con, "UPDATE gastos SET salud = '$monto' WHERE idusuario = '$idusuario'");
+        }
+        if($categoria == "servicios")
+        {
+            mysqli_query($con, "UPDATE gastos SET servicios = '$monto' WHERE idusuario = '$idusuario'");
+        }
+        if($categoria == "ocio")
+        {
+            mysqli_query($con, "UPDATE gastos SET ocio = '$monto' WHERE idusuario = '$idusuario'");
+        }
+        if($categoria == "otros")
+        {
+            mysqli_query($con, "UPDATE gastos SET otros = '$monto' WHERE idusuario = '$idusuario'");
+        }
+
+        $getBalance = mysqli_query($con, "SELECT * FROM gastos WHERE idusuario = '$idusuario'");
+        $mostrar = mysqli_fetch_array($getBalance);
+        $balanceActual = $mostrar['balance_general'];
+        $gastosTotales = $mostrar['gastos_totales'];
+
+        $balanceActual = $balanceActual - $monto; 
+        $gastosTotales = $gastosTotales + $monto;
+        mysqli_query($con, "UPDATE gastos SET balance_general = '$balanceActual', gastos_totales = '$gastosTotales' WHERE idusuario = '$idusuario'");
+
     }
     else{
     $message['status'] = "error"; 

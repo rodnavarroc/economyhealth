@@ -12,7 +12,14 @@ if($data['action'] == "insert"){
     $correo_electronico = $data['correoElectronico'];
     $q = mysqli_query($con, "INSERT INTO `usuarios` (`nombre_usuario` , `clave` , `correo_electronico`) VALUES ('$nombre_usuario', '$clave', '$correo_electronico')"); 
     if($q){
-    $message['status'] = "success"; 
+    
+    $message['status'] = "success";
+    $q2 = mysqli_query($con, "SELECT * FROM `usuarios` WHERE nombre_usuario = '$nombre_usuario'");
+    $mostrar = mysqli_fetch_array($q2);
+    $idusr = $mostrar['idusuario'];
+
+    mysqli_query($con, "INSERT INTO `gastos` (`idusuario` , `alimento` , `salud` ,  `servicios` , `ocio` , `otros` , `balance_general` , `gastos_totales`) 
+        VALUES ('$idusr', '0', '0', '0', '0', '0', '0', '0')"); 
     }
     else{
     $message['status'] = "error"; 
