@@ -58,9 +58,6 @@
       <ion-label>Card Button Item 2</ion-label>
     </ion-item>
   </ion-card>-->
-  
-
-  
 
 <!-- CARD DE ITEMS
   <ion-card>
@@ -92,7 +89,7 @@
 
    <!--CARD 1-->
   <ion-card>
-    <ion-img src="https://www.paredro.com/wp-content/uploads/2015/08/cinepolis-cinemex.jpg"></ion-img>
+    <ion-img class="imagen_card" src="https://i.imgur.com/wZQHIKj.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -112,7 +109,7 @@
 
    <!--CARD 2-->
   <ion-card>
-    <ion-img  src="https://mextudia.com/wp-content/uploads/2019/09/office02.jpg"></ion-img>
+    <ion-img  class="imagen_card" src="https://i.imgur.com/tUruUrx.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -133,7 +130,7 @@
 
   <!--CARD 3-->
   <ion-card>
-    <ion-img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=auto,q=80,fit=contain/content/2016/01/egg-wrap-recetas-r%C3%A1pidas-medium.jpg"></ion-img>
+    <ion-img class="imagen_card" src="https://i.imgur.com/mz9yMaA.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -168,7 +165,7 @@
 
   <!--CARD 4-->
   <ion-card>
-    <ion-img  src="https://lh3.googleusercontent.com/proxy/6PPVNXyZ_V1pQS2p5g9cI9qdX4COsntdDKVbS-fVKck2VfqQSHlaS94fXBZw-EJFF5KrYMhAhhg_81OiXypneooCFU6Z2I9JhLviOo0OmTY4W_IvooZlC8n7t76Z0491LJSPIrDoMwtg3XA"></ion-img>
+    <ion-img  class="imagen_card" src="https://i.imgur.com/n1ZAmnq.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -181,13 +178,13 @@
     <ion-card-title>Spotify.</ion-card-title>
   </ion-card-header>
     <ion-card-content style="text-align: justify;">
-      Spotify otorga un precio especial en la suscripción premium a estudiantes mayores de 18 años y que estén inscritos en alguna institución de educación superior acreditadas. 
+      Spotify otorga un precio especial en la suscripción premium a estudiantes mayores de 18 años y que estén inscritos en alguna institución de educación superior acreditadas. El descuento se tiene que renovar cada 12 meses. 
     </ion-card-content>
   </ion-card>
 
   <!--CARD 5-->
   <ion-card>
-    <ion-img src="https://www.zaplo.es/blog/wp-content/uploads/2019/01/controlar-tus-gastos.jpeg"></ion-img>
+    <ion-img class="imagen_card" src="https://i.imgur.com/ZNPdsDJ.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -222,7 +219,7 @@
 
   <!--CARD 6-->
   <ion-card>
-    <ion-img  src="https://brandemia.org/sites/default/files/logo_principal_autodesk.jpg"></ion-img>
+    <ion-img  class="imagen_card" src="https://i.imgur.com/ReA8317.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -241,7 +238,7 @@
 
   <!--CARD 7-->
   <ion-card>
-    <ion-img src="https://cocinaconoberon.files.wordpress.com/2015/09/shutterstock_249406468.jpg"></ion-img>
+    <ion-img class="imagen_card" src="https://i.imgur.com/q8H0VZi.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -276,7 +273,26 @@
 
   <!--CARD 8-->
   <ion-card>
-    <ion-img src="https://cocinaconoberon.files.wordpress.com/2015/09/shutterstock_249406468.jpg"></ion-img>
+    <ion-img  class="imagen_card" src="https://i.imgur.com/jwqjBru.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Descuento estudiantil</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Amazon Prime.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Obtenga Amazon Prime a mitad de precio. Sólo aplica para estudiantes universitarios.
+    </ion-card-content>
+  </ion-card>
+
+  <!--CARD 9-->
+  <ion-card>
+    <ion-img class="imagen_card" src="https://i.imgur.com/9LVJjmV.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -286,7 +302,7 @@
         <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
       </ion-col>
     </ion-row>
-    <ion-card-title>20 trucos para ahorrar en la cocina.</ion-card-title>
+    <ion-card-title>5 recetas fáciles por menos de 70 pesos.</ion-card-title>
   </ion-card-header>
     <ion-card-content style="text-align: justify;">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
@@ -294,7 +310,7 @@
     <ion-grid>
       <ion-row>
         <ion-col size="6">
-          <a href="https://www.clara.es/hogar/trucos-para-ahorrar-cocina_183" target="blank">
+          <a href="http://www.dadaroom.com/blog/5-recetas-faciles-por-menos-de-70-pesos/" target="blank">
           <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
           </a>
         </ion-col>
@@ -309,9 +325,9 @@
     </ion-grid>
   </ion-card>
 
-  <!--CARD 9-->
+  <!--CARD 10-->
   <ion-card>
-    <ion-img src="https://querido-dinero.imgix.net/255/Portada-30-copy.png?w=1200&h=628&fit=crop&crop=faces&auto=format,compress&lossless=1"></ion-img>
+    <ion-img class="imagen_card" src="https://i.imgur.com/QS8qzWF.jpg"></ion-img>
     <ion-card-header>
     <ion-row>
       <ion-col>
@@ -343,6 +359,311 @@
       </ion-row>
     </ion-grid>
   </ion-card>
+
+  <!--CARD 11-->
+  <ion-card>
+    <ion-img  class="imagen_card" src="https://i.imgur.com/99K3khn.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Descuento estudiantil</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Github Education.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Github ofrece a estudiantes desde descuentos hasta uso gratuito de ciertos softwares, algunos de estos software son: Unity, Arduino Education, DataCamp, Wisej y muchos más. Lo único que necesitará es un correo universitario. 
+    </ion-card-content>
+  </ion-card>
+
+  <!--CARD 12-->
+  <ion-card>
+    <ion-img class="imagen_card" src="https://i.imgur.com/wJHyegX.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Alimentación</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>6 recetas de comida saludable por menos de 100 pesos.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://culturacolectiva.com/comida/recetas-saludable-por-menos-de-100-pesos" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 13-->
+  <ion-card>
+    <ion-img class="imagen_card" src="https://i.imgur.com/mL700GQ.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Finanzas</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Comiendo una semana con 25 pesos al día.    (Video)</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.youtube.com/watch?v=Rwssl3SZ-4c&list=PL1ebpFrA3ctEG5_yIBDtKcQU6WEBDwo2l" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir al video</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 14-->
+  <ion-card>
+    <ion-img  class="imagen_card" src="https://i.imgur.com/IlAxGc3.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Descuento estudiantil</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Apple music.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Apple otorga un precio especial en su suscripción a Apple music a estudiantes inscritos en universidades e instituciones educativas que otorgan títulos. El descuento se tiene que renovar cada 48 meses. 
+    </ion-card-content>
+  </ion-card>
+
+  <!--CARD 15-->
+  <ion-card>
+    <ion-img class="imagen_card" src="https://i.imgur.com/EdRJ2gY.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Alimentación</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>20 recetas para cuando esté bajo en presupuesto.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.recreoviral.com/curiosidades/comida-preparar-bancarrota/" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 16-->
+  <ion-card>
+    <ion-img class="imagen_card" src="https://i.imgur.com/CEikfKy.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Finanzas</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>5 formas para hacer que tu comida dure más tiempo.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.cocinadelirante.com/tips/como-hacer-que-la-comida-no-se-eche-perder" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 17-->
+  <ion-card>
+    <ion-img class="imagen_card" src="https://i.imgur.com/MDLaBIL.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Finanzas</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>7 tips para ahorrar en la compra del supermercado.   (Video)</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.youtube.com/watch?v=MlcH1TocMSA" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir al video</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 18-->
+  <ion-card>
+    <ion-img class="imagen_card" src="https://i.imgur.com/NNOBvUo.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Alimentación</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>36 recetas fáciles para congelar en raciones.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.elespanol.com/cocinillas/actualidad-gastronomica/20150309/recetas-faciles-congelar-raciones/16748335_0.html" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--CARD 19-->
+  <ion-card>
+    <ion-img  class="imagen_card" src="https://i.imgur.com/yv0UzaW.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Descuento estudiantil</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Youtube premium.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Obtenga un descuento preferencial para estudiantes, el único requisito es que estén disponibles las membresías para estudiantes en su institución. El descuento se tiene que renovar cada 12 meses. 
+    </ion-card-content>
+  </ion-card>
+
+  <!--CARD 20-->
+  <ion-card>
+    <ion-img class="imagen_card" src="https://i.imgur.com/rzhPaTH.jpg"></ion-img>
+    <ion-card-header>
+    <ion-row>
+      <ion-col>
+        <ion-card-subtitle><i>#Alimentación</i></ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <a (click)="toggleZipped()" (click)="clickedStar()" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-card-title>Guía para congelar alimentos de manera correcta.</ion-card-title>
+  </ion-card-header>
+    <ion-card-content style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus ipsam ratione voluptates nostrum labore officiis, pariatur cupiditate quis dolor ullam.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <a href="https://www.cocinafacil.com.mx/tips-de-cocina/guia-para-congelar-alimentos/" target="blank">
+          <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+          </a>
+        </ion-col>
+        <ion-col size="6">
+          <center>
+            <ion-button expand="block"  class="btn_secondary">
+              <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+            </ion-button>
+          </center>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+
   
 
 
