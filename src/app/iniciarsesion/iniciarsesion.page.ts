@@ -9,6 +9,7 @@ import {Globals} from '../globals';
   templateUrl: './iniciarsesion.page.html',
   styleUrls: ['./iniciarsesion.page.scss'],
 })
+
 export class IniciarsesionPage implements OnInit {
   
   session:any = {};

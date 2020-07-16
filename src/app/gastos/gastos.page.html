@@ -19,7 +19,7 @@
     <ion-label> Tipo de gasto </ion-label>
     <br>
       <ion-item>
-        <ion-select placeholder="Seleccione una opción" [(ngModel)]="tipoGasto">
+        <ion-select placeholder="Seleccione una opción" [(ngModel)]="gasto.categoria">
           <ion-select-option value="alimentos">Alimento</ion-select-option>
           <ion-select-option value="salud">Salud</ion-select-option>
           <ion-select-option value="transporte">Transporte</ion-select-option>
@@ -29,22 +29,23 @@
         </ion-select>
       </ion-item>
       <br>
-    <ion-label>Nombre del producto o servicio</ion-label>
+    <ion-label>Concepto</ion-label>
     <br>
       <ion-item>
-        <ion-input placeholder="Ingrese el texto" [(ngModel)]="nombreGasto"></ion-input>
+        <ion-input placeholder="Ingrese el concepto" [(ngModel)]="gasto.concepto"></ion-input>
       </ion-item>
       <br>
 
-    <ion-label>Costo</ion-label>
+    <ion-label>Monto</ion-label>
     <br>
       <ion-item>
-        <ion-input placeholder="$" [(ngModel)]="costoGasto"></ion-input>
+        <ion-input placeholder="$" [(ngModel)]="gasto.monto"></ion-input>
       </ion-item>
   </ion-list>
 <br>
 <br>
 <br>
 
-<center><ion-button (click)="funcionImprimir()" color="medium">ENVIAR</ion-button></center>
+<center><ion-button (click)="insertDatosGasto()" color="medium">ENVIAR</ion-button></center>
+<ion-button (click)="info()" color="medium">sadhf</ion-button>
 </ion-content>
