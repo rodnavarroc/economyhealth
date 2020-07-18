@@ -7,21 +7,21 @@
   <ion-content class="menuContent">
     <!--Aqui van los links del menu-->
     
-    <ion-item>
-      <a routerLink="/perfil"><ion-label>
+    <a routerLink="/perfil"><ion-item>
+      <ion-label>
         Perfil
-      </ion-label></a>
-    </ion-item>
-    <ion-item>
-      <a routerLink="/about-us"><ion-label>
+      </ion-label>
+    </ion-item></a>
+    <a routerLink="/about-us"><ion-item>
+      <ion-label>
         About us
-      </ion-label></a>
-    </ion-item>
-    <ion-item class="cerrar">
-      <a onclick="cerrarSesion()" class="a_cerrar"><ion-label>  <!--el onclick es para cerrar sesión pero aún no está terminado-->
+      </ion-label>
+    </ion-item></a>
+    <a onclick="cerrarSesion()" class="a_cerrar"><ion-item class="cerrar">
+      <ion-label>  <!--el onclick es para cerrar sesión pero aún no está terminado-->
         Cerrar sesión
-      </ion-label></a>
-    </ion-item>
+      </ion-label>
+    </ion-item></a>
   </ion-content>
 </ion-menu>
 <ion-router-outlet id="menuContent"></ion-router-outlet>
