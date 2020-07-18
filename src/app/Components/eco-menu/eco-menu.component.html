@@ -6,6 +6,22 @@
   </ion-header>
   <ion-content class="menuContent">
     <!--Aqui van los links del menu-->
+    
+    <ion-item>
+      <a routerLink="/perfil"><ion-label>
+        Perfil
+      </ion-label></a>
+    </ion-item>
+    <ion-item>
+      <a routerLink="/about-us"><ion-label>
+        About us
+      </ion-label></a>
+    </ion-item>
+    <ion-item class="cerrar">
+      <a onclick="cerrarSesion()" class="a_cerrar"><ion-label>
+        Cerrar sesión
+      </ion-label></a>
+    </ion-item>
   </ion-content>
 </ion-menu>
 <ion-router-outlet id="menuContent"></ion-router-outlet>

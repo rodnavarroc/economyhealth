@@ -25,7 +25,15 @@ const routes: Routes = [
   {
     path: 'gastos',
     loadChildren: () => import('./gastos/gastos.module').then( m => m.GastosPageModule)
+  },  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
   }
+
 
 
 
