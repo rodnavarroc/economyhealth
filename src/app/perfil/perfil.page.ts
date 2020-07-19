@@ -20,6 +20,11 @@ export class PerfilPage implements OnInit {
   ngOnInit() {
   }
 
+  ionViewDidEnter()
+  {
+    this.obtenerUsuario();
+  }
+
     obtenerUsuario(){
     this.datos.action = "insert"; 
     this.datos.idusuario = this.globals.username;
