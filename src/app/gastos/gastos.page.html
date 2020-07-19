@@ -1,17 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button autoHide="false"></ion-menu-button>
-    </ion-buttons>
-    <ion-text>&nbsp;Agregar Gastos</ion-text>
-    <ion-tab-button class="mainIcon" slot="end" routerLink="/tabs/tab1"><ion-icon name="home-outline"></ion-icon></ion-tab-button>
+    <div class="p-3">
+      <ion-text style="float:right; padding-right: 5%;" class="titulo_letra">&nbsp;Agregar gastos</ion-text><span style="float: left;"><a routerLink="/tabs"><ion-icon slot="secondary" name="arrow-back-outline" style="font-size: 150%; color: #DBF4AD;"></ion-icon></a></span>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="false" class="ion-padding">
   <ion-list style="background:transparent;">
     <ion-list-header>
-      <center><p class="textoTitulo">Ingresar un nuevo gasto</p></center>
+      <center><p class="textoTitulo">Ingresar un gasto nuevo</p></center>
       <br>
       <br>
       <br>
