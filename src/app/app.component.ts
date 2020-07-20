@@ -25,6 +25,8 @@ export class AppComponent {
       this.router.navigateByUrl('start-page');
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.statusBar.overlaysWebView(false);
+      this.statusBar.backgroundColorByHexString('#3d543a');
     });
   }
 }
