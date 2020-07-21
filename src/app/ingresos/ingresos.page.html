@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ingresos</ion-title>
+    <div class="p-3">
+      <ion-text style="float:right; padding-right: 5%;" class="titulo_letra">&nbsp;Agregar ingresos</ion-text><span style="float: left;"><a routerLink="/tabs"><ion-icon slot="secondary" name="arrow-back-outline" style="font-size: 150%; color: #DBF4AD;"></ion-icon></a></span>
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="false" class="ion-padding">
+  <ion-list style="background:transparent;">
+    <ion-list-header>
+      <center><p class="textoTitulo">Ingreso</p></center>
+      <br>
+      <br>
+      <br>
+    </ion-list-header>
+    <ion-label>Monto</ion-label>
+    <br>
+      <ion-item>
+        <ion-input type="number" placeholder="$" [(ngModel)]="ingreso.montoIngreso"></ion-input>
+      </ion-item>
+  </ion-list>
+<br>
+<br>
+<br>
 
+<center><ion-button (click)="insertDatosIngreso()" color="medium">ENVIAR</ion-button></center>
 </ion-content>

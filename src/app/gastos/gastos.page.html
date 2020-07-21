@@ -37,12 +37,12 @@
     <ion-label>Monto</ion-label>
     <br>
       <ion-item>
-        <ion-input placeholder="$" [(ngModel)]="gasto.monto"></ion-input>
+        <ion-input type="number" placeholder="$" [(ngModel)]="gasto.monto"></ion-input>
       </ion-item>
   </ion-list>
 <br>
 <br>
 <br>
 
-<center><ion-button (click)="insertDatosGasto()" color="medium">ENVIAR {{numero}}</ion-button></center>
+<center><ion-button (click)="insertDatosGasto()" color="medium">ENVIAR</ion-button></center>
 </ion-content>
