@@ -20,10 +20,10 @@ export class IngresosPage implements OnInit {
   }
 
 
-  insertDatosGasto(){
+  insertDatosIngreso(){
     this.ingreso.action = "insert"; 
     this.ingreso.idusuario = this.globals.username;
-    this.http.post("http://45.15.24.33/economyhealth_server/historial_ingresos.php", this.ingreso).subscribe(data=>{ 
+    this.http.post("http://45.15.24.33/economyhealth_server/historial_ingreso.php", this.ingreso).subscribe(data=>{ 
     console.log(data);
     let result = JSON.stringify(data["_body"]);
     if(data['status'] == "success")

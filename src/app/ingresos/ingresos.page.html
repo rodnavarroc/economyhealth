@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="false" class="ion-padding">
   <ion-list style="background:transparent;">
     <ion-list-header>
-      <center><p class="textoTitulo">Ingreso</p></center>
+      <p class="textoTitulo"><center>Ingreso</center></p>
       <br>
       <br>
       <br>
@@ -20,9 +20,6 @@
         <ion-input type="number" placeholder="$" [(ngModel)]="ingreso.montoIngreso"></ion-input>
       </ion-item>
   </ion-list>
-<br>
-<br>
-<br>
-
-<center><ion-button (click)="insertDatosIngreso()" color="medium">ENVIAR</ion-button></center>
+<br><br>
+<center><ion-button (click)="insertDatosIngreso()" color="medium">AGREGAR</ion-button></center>
 </ion-content>
