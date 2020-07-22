@@ -1,4 +1,4 @@
-ion-content, ion-label {
+ion-content{
     font-family: Inter;
     font-weight: normal;
     color: #656565;
@@ -34,4 +34,21 @@ ion-toolbar
 
 .titulo_letra{
     font-size: 125%;
+}
+
+h4{
+    color: #656565;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-align: justify;
+}
+
+
+ion-list, ion-item, ion-label {
+    color: #656565;
+    --background: #cfe3d3;
+    font-size: 105%;
+    font-family: Inter;
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
