@@ -12,8 +12,8 @@ import { Globals } from '../globals';
 export class PerfilPage implements OnInit {
 
   datos:any={};
-  nombre_usuario: any=0;
-  correo_electronico: any=0;
+  nombre_usuario: any="";
+  correo_electronico: any="";
   constructor(public http:HttpClient, private menu: MenuController, public globals: Globals) { this.globals = globals; }
 
 
