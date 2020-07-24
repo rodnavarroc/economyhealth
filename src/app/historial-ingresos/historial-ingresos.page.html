@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="p-3">
+      <ion-text style="float:right; padding-right: 5%;" class="titulo_letra">&nbsp;Historial de ingresos</ion-text><span style="float: left;"><a routerLink="/tabs"><ion-icon slot="secondary" name="arrow-back-outline" style="font-size: 150%; color: #DBF4AD;"></ion-icon></a></span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <center><p style="font-size:125%;">Tabla de ingresos</p></center>
+  <br>
+  <br>
+  <ion-grid>
+    <ion-row style="background-color: #587854;">
+      <ion-col>
+        Titulo1
+      </ion-col>
+      <ion-col>
+        Titulo2
+      </ion-col>
+      <ion-col>
+        Titulo3
+      </ion-col>
+      <ion-col>
+        Titulo4
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let item of lista">
+      <ion-col>
+        {{item.col1}}
+      </ion-col>
+      <ion-col>
+        {{item.col2}}
+      </ion-col>
+      <ion-col>
+        {{item.col3}}
+      </ion-col>
+      <ion-col>
+        {{item.col4}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

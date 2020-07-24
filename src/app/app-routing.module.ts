@@ -36,6 +36,14 @@ const routes: Routes = [
   {
     path: 'ingresos',
     loadChildren: () => import('./ingresos/ingresos.module').then( m => m.IngresosPageModule)
+  },
+  {
+    path: 'historial-gastos',
+    loadChildren: () => import('./historial-gastos/historial-gastos.module').then( m => m.HistorialGastosPageModule)
+  },
+  {
+    path: 'historial-ingresos',
+    loadChildren: () => import('./historial-ingresos/historial-ingresos.module').then( m => m.HistorialIngresosPageModule)
   }
 
 
