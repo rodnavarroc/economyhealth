@@ -8,37 +8,26 @@
 
 <ion-content>
   <br>
-  <center><p style="font-size:125%;">Tabla de gastos</p></center>
-  <br>
+  <center><h4>Tabla de gastos</h4></center>
   <br>
   <ion-grid>
-    <ion-row style="background-color: #587854;">
-      <ion-col>
-        Titulo1
-      </ion-col>
-      <ion-col>
-        Titulo2
-      </ion-col>
-      <ion-col>
-        Titulo3
-      </ion-col>
-      <ion-col>
-        Titulo4
-      </ion-col>
-    </ion-row>
-    <ion-row *ngFor="let item of lista">
-      <ion-col>
-        {{item.col1}}
-      </ion-col>
-      <ion-col>
-        {{item.col2}}
-      </ion-col>
-      <ion-col>
-        {{item.col3}}
-      </ion-col>
-      <ion-col>
-        {{item.col4}}
-      </ion-col>
+    <ion-row>
+      <table class="table">
+        <thead style="background-color: #587854; color: #DBF4AD;">
+          <tr>
+            <th scope="col"><center>Concepto</center></th>
+            <th scope="col"><center>Monto</center></th>
+            <th scope="col"><center>Fecha</center></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let gasto of gastosList">
+            <td scope="row"><center>{{gasto.concepto}}</center></td>
+            <td scope="row"><center>{{gasto.monto}}</center></td>
+            <td scope="row"><center>{{gasto.fecha_gasto}}</center></td>
+          </tr>
+        </tbody>
+      </table>
     </ion-row>
   </ion-grid>
 </ion-content>

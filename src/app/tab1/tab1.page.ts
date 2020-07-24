@@ -52,11 +52,11 @@ export class Tab1Page {
     this.balance_general = data['balance_general'];
     this.gastos_totales = data['gastos_totales'];
 
-    this.porcentaje_alimento = (this.alimento / this.balance_general) * 100;
-    this.porcentaje_salud = (this.salud / this.balance_general) * 100;
-    this.porcentaje_servicios = (this.servicios / this.balance_general) * 100;
-    this.porcentaje_ocio = (this.ocio / this.balance_general) * 100;
-    this.porcentaje_otros = (this.otros / this.balance_general) * 100;
+    this.porcentaje_alimento = (this.alimento / this.gastos_totales) * 100;
+    this.porcentaje_salud = (this.salud / this.gastos_totales) * 100;
+    this.porcentaje_servicios = (this.servicios / this.gastos_totales) * 100;
+    this.porcentaje_ocio = (this.ocio / this.gastos_totales) * 100;
+    this.porcentaje_otros = (this.otros / this.gastos_totales) * 100;
 
     }, err=>{
     console.log(err); 

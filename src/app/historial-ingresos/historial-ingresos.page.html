@@ -8,37 +8,25 @@
 
 <ion-content>
   <br>
-  <center><p style="font-size:125%;">Tabla de ingresos</p></center>
+  <center><h4>Tabla de ingresos</h4></center>
   <br>
   <br>
   <ion-grid>
-    <ion-row style="background-color: #587854;">
-      <ion-col>
-        Titulo1
-      </ion-col>
-      <ion-col>
-        Titulo2
-      </ion-col>
-      <ion-col>
-        Titulo3
-      </ion-col>
-      <ion-col>
-        Titulo4
-      </ion-col>
-    </ion-row>
-    <ion-row *ngFor="let item of lista">
-      <ion-col>
-        {{item.col1}}
-      </ion-col>
-      <ion-col>
-        {{item.col2}}
-      </ion-col>
-      <ion-col>
-        {{item.col3}}
-      </ion-col>
-      <ion-col>
-        {{item.col4}}
-      </ion-col>
+    <ion-row>
+      <table class="table">
+        <thead style="background-color: #587854; color: #DBF4AD;">
+          <tr>
+            <th scope="col"><center>Monto</center></th>
+            <th scope="col"><center>Fecha</center></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ingreso of ingresosList">
+            <td scope="row"><center>{{ingreso.montoIngreso}}</center></td>
+            <td scope="row"><center>{{ingreso.fecha_ingreso}}</center></td>
+          </tr>
+        </tbody>
+      </table>
     </ion-row>
   </ion-grid>
 </ion-content>
