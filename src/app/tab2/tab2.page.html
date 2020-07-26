@@ -13,7 +13,7 @@
 
   <!--CUERPO DE LA PAGINA-->
 
-  <ion-card *ngFor="let guide of guidesList">
+  <ion-card *ngFor="let guide of globals.guidesList">
     <ion-img class="imagen_card" src="{{guide.imagen}}"></ion-img>
     <ion-card-header>
     <ion-row>
@@ -21,7 +21,7 @@
         <ion-card-subtitle><i>#{{guide.tipo}}</i></ion-card-subtitle>
       </ion-col>
       <ion-col>
-        <a (click)="toggleZipped()" (click)="addFavoritos(guide.idguia)" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped ? 'star-outline' : 'star'"></ion-icon></a>
+        <a (click)="toggleZipped(guide.idguia)" (click)="addFavoritos(guide.idguia)" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped[guide.idguia] ? 'star-outline' : 'star'"></ion-icon></a>
       </ion-col>
     </ion-row>
     <ion-card-title>{{guide.titulo}}</ion-card-title>

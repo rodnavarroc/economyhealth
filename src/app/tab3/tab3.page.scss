@@ -4,14 +4,6 @@ ion-toolbar
     --color: #DBF4AD;
 }
 
-ion-content, ion-label {
-    font-family: Inter;
-    font-weight: normal;
-    color: #656565;
-    //--background: #f7f7f5;
-    --background: url('https://i.imgur.com/gKl1VI9.png') no-repeat center/cover fixed;
-}
-
 .iconStyle
 {
     --background:transparent;
@@ -24,6 +16,58 @@ ion-content, ion-label {
 
 a {
     text-decoration: none;
+}
+
+ion-card, ion-item {
+    font-family: Inter;
+    font-weight: normal;
+    color: #656565;
+    --background: #E1F1DF;
+    padding-bottom: 5%;
+}
+
+ion-card {
+    border-top: 6px solid #656565
+ }
+
+.imagen_card{
+    min-height: 1px
+}
+
+
+
+ion-content, ion-label {
+    font-family: Inter;
+    font-weight: normal;
+    color: #656565;
+    //--background: #f7f7f5;
+    --background: url('https://i.imgur.com/gKl1VI9.png') no-repeat center/cover fixed;
+}
+
+.btn_ligas
+{
+    --background: #a6d3a0;
+    --color: #656565;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    outline: black;
+}
+
+.btn_secondary
+{
+    --background: #a6d3a0;
+    --color: #656565;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    outline: black;
+}
+
+.img_descuentos {
+    //border-radius: 10px !important;
+    //border: solid;
+    overflow: hidden;
 }
 
 .titulo_letra{

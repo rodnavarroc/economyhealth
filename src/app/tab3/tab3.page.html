@@ -8,5 +8,40 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
+
+    <!--CUERPO DE LA PAGINA-->
+
+    <ion-card *ngFor="let fav of globals.favsList">
+      <ion-img class="imagen_card" src="{{globals.guidesList[fav.idcontenido].imagen}}"></ion-img>
+      <ion-card-header>
+      <ion-row>
+        <ion-col>
+          <ion-card-subtitle><i>#{{globals.guidesList[fav.idcontenido].tipo}}</i></ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+      <ion-card-title>{{globals.guidesList[fav.idcontenido].titulo}}</ion-card-title>
+    </ion-card-header>
+      <ion-card-content style="text-align: justify;">
+        {{globals.guidesList[fav.idcontenido].descripcion}}
+      </ion-card-content>
+      <ion-grid *ngIf="globals.guidesList[fav.idcontenido].enlace != '-'">
+        <ion-row>
+          <ion-col size="6">
+            <a href="{{globals.guidesList[fav.idcontenido].enlace}}" target="blank">
+            <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
+            </a>
+          </ion-col>
+          <ion-col size="6">
+            <center>
+              <ion-button expand="block"  class="btn_secondary">
+                <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+              </ion-button>
+            </center>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  
+    <!--CUERPO DE LA PAGINA-->
       
 </ion-content>
