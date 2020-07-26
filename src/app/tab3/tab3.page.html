@@ -12,22 +12,22 @@
     <!--CUERPO DE LA PAGINA-->
 
     <ion-card *ngFor="let fav of globals.favsList">
-      <ion-img class="imagen_card" src="{{globals.guidesList[fav.idcontenido].imagen}}"></ion-img>
+      <ion-img class="imagen_card" src="{{globals.guidesList[(fav.idcontenido)-1].imagen}}"></ion-img>
       <ion-card-header>
       <ion-row>
         <ion-col>
-          <ion-card-subtitle><i>#{{globals.guidesList[fav.idcontenido].tipo}}</i></ion-card-subtitle>
+          <ion-card-subtitle><i>#{{globals.guidesList[(fav.idcontenido)-1].tipo}}</i></ion-card-subtitle>
         </ion-col>
       </ion-row>
-      <ion-card-title>{{globals.guidesList[fav.idcontenido].titulo}}</ion-card-title>
+      <ion-card-title>{{globals.guidesList[(fav.idcontenido)-1].titulo}}</ion-card-title>
     </ion-card-header>
       <ion-card-content style="text-align: justify;">
-        {{globals.guidesList[fav.idcontenido].descripcion}}
+        {{globals.guidesList[(fav.idcontenido)-1].descripcion}}
       </ion-card-content>
-      <ion-grid *ngIf="globals.guidesList[fav.idcontenido].enlace != '-'">
+      <ion-grid *ngIf="globals.guidesList[(fav.idcontenido)-1].enlace != '-'">
         <ion-row>
           <ion-col size="6">
-            <a href="{{globals.guidesList[fav.idcontenido].enlace}}" target="blank">
+            <a href="{{globals.guidesList[(fav.idcontenido)-1].enlace}}" target="blank">
             <ion-button class="btn_ligas" expand="full">Ir a la nota</ion-button>
             </a>
           </ion-col>
