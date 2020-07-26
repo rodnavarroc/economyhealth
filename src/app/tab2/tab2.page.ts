@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Globals } from '../globals';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 @Component({
   selector: 'app-tab2',
@@ -10,7 +11,7 @@ import { Globals } from '../globals';
 export class Tab2Page {
   session:any = {};
   
-  constructor(public http:HttpClient, public globals: Globals) { this.globals = globals; }
+  constructor(public http:HttpClient, public globals: Globals, private socialSharing: SocialSharing) { this.globals = globals; }
 
   ngOnInit()
   {
@@ -43,6 +44,10 @@ export class Tab2Page {
     }, err=>{
     console.log(err); 
     })
+  }
+
+  sendShare(message:any, subject:any, url:any) {
+    this.socialSharing.share(message, subject, null, url);
   }
 }
 
