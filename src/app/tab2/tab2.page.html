@@ -21,7 +21,7 @@
         <ion-card-subtitle><i>#{{guide.tipo}}</i></ion-card-subtitle>
       </ion-col>
       <ion-col>
-        <a (click)="toggleZipped(guide.idguia)" (click)="addFavoritos(guide.idguia)" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="zipped[guide.idguia] ? 'star-outline' : 'star'"></ion-icon></a>
+        <a (click)="toggleZipped(guide.idguia)" (click)="addFavoritos(guide.idguia)" style="float: right; font-size: 18px;"><ion-icon slot="icon-only" [name]="globals.zipped[guide.idguia] ? 'star-outline' : 'star'"></ion-icon></a>
       </ion-col>
     </ion-row>
     <ion-card-title>{{guide.titulo}}</ion-card-title>

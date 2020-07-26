@@ -9,7 +9,6 @@ import { Globals } from '../globals';
 })
 export class Tab2Page {
   session:any = {};
-  zipped:any = {};
   
   constructor(public http:HttpClient, public globals: Globals) { this.globals = globals; }
 
@@ -17,27 +16,17 @@ export class Tab2Page {
   {
     for(let i = 0; i <= 20; i++)
     {
-      this.zipped[i] = !this.zipped[i];
+      this.globals.zipped[i] = !this.globals.zipped[i];
     }
   }
 
   ionViewDidEnter()
   {
     this.globals.loadFavs();
-    this.cargarIconos();
   }
-
- cargarIconos()
-  { 
-    for(let i = 0; i < this.globals.favsList.length; i++)
-    {
-      console.log("entro");
-    }
-  }
-
 
   toggleZipped(id: any): void {
-  this.zipped[id] = !this.zipped[id];
+  this.globals.zipped[id] = !this.globals.zipped[id];
   }
 
   addFavoritos(id: any)
