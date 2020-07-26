@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { MenuController } from '@ionic/angular';
 import { Globals } from '../globals';
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -30,11 +32,17 @@ export class Tab1Page {
   porcentaje_ocio: any = 0;
   porcentaje_otros: any = 0;
 
-  constructor(public http:HttpClient, private menu: MenuController, public globals: Globals) { this.globals = globals; }
+  constructor(public http:HttpClient, private menu: MenuController, public globals: Globals, public router : Router, private activatedRoute: ActivatedRoute) 
+  { 
+    this.globals = globals; 
+  }
 
   ionViewDidEnter()
   {
     this.obtenerDatos();
+    this.activatedRoute.params.subscribe(routeParams => {
+      this.obtenerDatos();
+  });
   }
 
   obtenerDatos(){

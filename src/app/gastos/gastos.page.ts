@@ -29,7 +29,7 @@ export class GastosPage implements OnInit {
     if(data['status'] == "success")
     {
       this.successAlert();
-      this.router.navigate(['/tabs/tab1']);
+      this.router.navigate(['/tabs/tab1', { gasto: this.gasto }]);
     }
     }, err=>{
     console.log(err); 
