@@ -26,6 +26,11 @@ export class CrearcuentaPage implements OnInit {
       this.successAlert();
       this.router.navigate(['/start-page']);
     }
+    if(data['status'] == "existe")
+    {
+      this.alreadyExistsAlert();
+      this.router.navigate(['/start-page']);
+    }
     }, err=>{
     console.log(err); 
     })
@@ -35,6 +40,15 @@ export class CrearcuentaPage implements OnInit {
       const alert = await this.alertController.create({
         header: '¡Listo!',
         message: 'Tu cuenta ha sido creada exitosamente.',
+        buttons: ['OK']
+      });
+      await alert.present();
+    }
+
+    async alreadyExistsAlert() {
+      const alert = await this.alertController.create({
+        header: '¡Hey!',
+        message: 'Ya existe una cuenta con el usuario o correo que intentas registrar.',
         buttons: ['OK']
       });
       await alert.present();

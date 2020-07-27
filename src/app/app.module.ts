@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Globals } from './globals';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+import { Network } from '@ionic-native/network/ngx';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
     Globals,
     SplashScreen,
     SocialSharing,
+    Network,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

@@ -19,6 +19,11 @@ export class SlidesinicioPage implements OnInit {
   ngOnInit() {
   }
 
+  ionViewDidEnter()
+  {
+    CheckCB = 0;
+  }
+
   revisarCheckbox()
   {
     if(CheckCB == 0)
